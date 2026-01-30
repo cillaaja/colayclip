@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Clipper Pro</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-scissors"></i> Clipper<span>Pro</span>
+            </div>
+            <p class="tagline">Turn YouTube Videos into Viral Shorts Instantly</p>
+        </header>
+
+        <main>
+            <div class="glass-card input-section">
+                <h2>Paste Your Link</h2>
+                <form id="clipForm">
+                    <div class="input-group">
+                        <i class="fa-brands fa-youtube input-icon"></i>
+                        <input type="url" id="videoUrl" placeholder="https://www.youtube.com/watch?v=..." required>
+                    </div>
+                    <button type="submit" id="processBtn">
+                        <span class="btn-text">Generate Shorts</span>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </button>
+                </form>
+                <div id="loader" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Analyzing content & creative magic happening...<br><span class="sub-text">This may take a few minutes</span></p>
+                </div>
+            </div>
+
+            <div id="resultsArea" class="results-section hidden">
+                <h3><i class="fa-solid fa-check-circle"></i> Ready to Download</h3>
+                <div class="video-grid" id="videoGrid">
+                    <!-- Results will be injected here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 ClipperPro AI. Optimized for Shorts, Reels & TikTok.</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
